@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev:worker": "tsx watch src/worker.ts",
-    "dev:add": "tsx src/addJob.ts"
+    "dev:add": "tsx src/addJob.ts",
+    "db:init": "tsx src/createTables.ts"
   },
   "keywords": [],
   "author": "",
@@ -13,10 +14,12 @@
   "type": "module",
   "dependencies": {
     "bullmq": "^6.3.8",
-    "ioredis": "^6.0.0"
+    "ioredis": "^6.0.0",
+    "pg": "^8.23.0"
   },
   "devDependencies": {
     "@types/node": "^26.6.2",
+    "@types/pg": "^8.23.1",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2"
   }
